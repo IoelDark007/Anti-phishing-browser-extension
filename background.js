@@ -60,7 +60,7 @@ async function isDangerousUrl(url) {
 
 // Analyze a URL with IPQualityScore
 async function analyzeURLwithIPQS(url) {
-    const apiKey = "gFwqvJwKCZWjZB7LqUW5dcIZqNjG0pat";
+    const apiKey = "IPQS_API_KEY_HERE";
     const apiurl = `https://www.ipqualityscore.com/api/json/url/${apiKey}/${encodeURIComponent(url)}`;
 
     try {
