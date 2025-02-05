@@ -1,0 +1,39 @@
+body{
+    justify-content: center;
+    background-color: red;
+    text-align: left;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header{
+    /*background-color: rgb(102, 95, 95);*/
+    position: relative;
+    top: 150px;
+    width: 350px;
+    color: whitesmoke;
+    left: 50px;
+}
+.middle{
+    /*background-color: rgb(70, 63, 63);*/
+    height: auto;
+    width: 900px;
+    position: relative;
+    top: 151px;
+    font-size: large;
+    color: whitesmoke;
+    left: 50px;
+}
+.middle button{
+    background-color: rgb(194, 13, 13);
+    border-radius: 5px;
+    font-size: medium;
+    border: none;
+    height: 40px;
+    color: wheat;
+    position: absolute;
+    left: 80%;
+    cursor: pointer;
+}
+.middle button:hover{
+    background-color: rgb(161, 6, 6);
+}

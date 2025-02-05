@@ -1,0 +1,73 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    background-color: rgb(1, 31, 0);
+    height: 300px;
+    width: 350px;
+    color: rgb(0, 165, 0);
+}
+img{
+    height: 100px;
+    width: auto;
+    border-radius: 5%;
+}
+.stats{
+    background-color: rgb(1, 31, 0);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+.stats p{
+    font-weight: bold;
+    margin: 5px 0;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: blue 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: red;
+    color: white;
+}
+#activate{
+    background-color: rgb(0, 199, 0);
+}
+button.enabled{
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+button.disabled{
+    background-color: rgb(65, 60, 60);
+    color: white;
+}
+#total-web-count{
+    /*color: rgb(75, 75, 75);*/
+    color: rgb(0, 153, 0);
+    font-size: large;
+}
+#flagged-web-count{
+    color: red;
+    font-size: medium;
+}
+#domain-status{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 2px 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#domain-status p:first-child{
+    font-size: 15px;
+}
+#domain-status p:last-child{
+    font-size: 12px;
+}

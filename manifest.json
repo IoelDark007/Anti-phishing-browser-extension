@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Anti-Phishing Extension",
+  "description": "Offers enhanced security and real-time protection against phishing attacks.",
+  "version": "1.0",
+  "permissions": ["activeTab", "webRequest", "declarativeNetRequest", "notifications", "tabs", "storage", "webNavigation", "scripting"],
+  "icons": {
+    "16": "images/safety-icon-16.png",
+    "32": "images/safety-icon-32.png",
+    "48": "images/safety-icon-48.png",
+    "64": "images/safety-icon-64.png",
+    "72": "images/safety-icon-72.png",
+    "128": "images/safety-icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "browser_style": true,
+    "default_icon": {
+      "16": "images/safety-icon-16.png",
+      "32": "images/safety-icon-32.png",
+      "48": "images/safety-icon-48.png",
+      "64": "images/safety-icon-64.png",
+      "72": "images/safety-icon-72.png",
+      "128": "images/safety-icon-128.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/safety-icon-16.png",
+        "images/safety-icon-32.png",
+        "images/safety-icon-48.png",
+        "images/safety-icon-64.png",
+        "images/safety-icon-72.png",
+        "images/safety-icon-128.png",
+        "images/Icon_2.png",
+        "images/Icon.png",
+        "blacklist.json"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
